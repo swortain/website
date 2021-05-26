@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>剑山的个人网站 - TouchDesigner入门教程</title>
+
+
+    
+
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="/fonts/line-icons.css">
+
+<link rel="stylesheet" type="text/css" href="/css/slicknav.css">
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/animate.css">
+
+<link rel="stylesheet" type="text/css" href="/css/owl.carousel.css">
+
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+<link rel="stylesheet" type="text/css" href="/css/responsive.css">
+
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,500' rel='stylesheet'>
+
+
+    <link rel="stylesheet" type="text/css" href="/css/nivo-lightbox.css">
+
+</head>
+
+<body>
+
+    <header id="header-wrap">
+
+        
+
+<nav class="navbar navbar-expand-lg fixed-top  scrolling-navbar">
+
+  
+  <div class="container">
+    
+    <div class="navbar-header">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+        aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="lni-menu"></span>
+        <span class="lni-menu"></span>
+        <span class="lni-menu"></span>
+      </button>
+      <a href="/" class="navbar-brand"><img src="/img/logo.png" alt=""></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="navbar-nav mr-auto" style="width:100%">
+        
+        <li class="nav-item " style="flex: auto;">
+          <a class="nav-link" href="/" style="text-align: center;">
+            Home|主页
+          </a>
+        </li>
+
+        
+        <li class="nav-item " style="flex: auto;">
+          <a class="nav-link" href="/project/" style="text-align: center;">
+            project|项目
+          </a>
+        </li>
+
+        
+        <li class="nav-item " style="flex: auto;">
+          <a class="nav-link" href="/portfolio/" style="text-align: center;">
+            portfolio|作品集
+          </a>
+        </li>
+
+        
+        <li class="nav-item " style="flex: auto;">
+          <a class="nav-link" href="/blog/" style="text-align: center;">
+            blog|博客
+          </a>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+  
+  <ul class="mobile-menu">
+
+    
+
+    <li class="nav-item ">
+
+      <a class="nav-link" href="/">
+        Home|主页
+      </a>
+    </li>
+
+    
+
+    <li class="nav-item ">
+
+      <a class="nav-link" href="/project/">
+        project|项目
+      </a>
+    </li>
+
+    
+
+    <li class="nav-item ">
+
+      <a class="nav-link" href="/portfolio/">
+        portfolio|作品集
+      </a>
+    </li>
+
+    
+
+    <li class="nav-item ">
+
+      <a class="nav-link" href="/blog/">
+        blog|博客
+      </a>
+    </li>
+
+    
+
+  </ul>
+  
+
+</nav>
+
+
+    </header>
+
+    
+
+    <div class="page-header" style="background: url(https://source.unsplash.com/800x300/?city);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-wrapper">
+                        <h2 class="product-title">TouchDesigner入门教程</h2>
+                        <ol class="breadcrumb">
+                            <li class="current"> Home/blog/touchdesigner-intro/ </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="content" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+
+                <div class="blog-post single-post">
+
+
+
+                    <div class="post-thumb">
+
+                       
+                        <div class="hover-wrap">
+                        </div>
+                    </div>
+
+
+                    <div class="post-content">
+                        <h2 class="post-title">TouchDesigner入门教程</h2>
+                        <div class="meta">
+                            <span class="meta-part"><i class="lni-user"></i> 剑山 </span>
+                            <span class="meta-part"></i>  May 26,
+                                2021 </span>
+
+                            
+                        </div>
+                        <div class="entry-summary">
+                            <p>其实很久以前就接触过TouchDesigner这个软件，但是当时对这种连线式的编程方式还是比较抗拒，所以只是大概了解了一下就没有继续看了。但是最近有一个项目用到了kinect azure，然后TD对这个东西的支持比较好，所以就用TD做了一次项目。发现和原来用processing写程序的感受还是挺不一样的。最近周围的人越来越多开始用td做项目。所以想开始写一些td的入门教程和防止自己后面会忘记，也给想要学td的人一些帮助。因为td的中文资源还不是很多，我学的时候主要还是只能看官方的wiki，辅助一些YouTube上面英文的视频教程。</p>
+<p>我还是用平常的方式来介绍，主要是解释几个概念，我的理解是搞懂了这些概念就可以知道题题是怎么样运行的。</p>
+<h1 id="op">OP</h1>
+<p>首先这种连线式的编程方式基本都是由一个一个的块链接而来的，在td中这些块被称为op。OP主要有下面这几种
+COMP、TOP、CHOP、SOP、MAT、DAT、Custom。
+<img src="https://upload-images.jianshu.io/upload_images/781388-eb0b4fd363693e22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="">
+其中TOP是对一个画面进行处理的，比如生成一个纯色的图片，或者一个渐变的图片，或者对几个输入的图片进行选择或者叠加什么的。</p>
+<p>CHOP会包含一个或者多个的数据，每个数据又可能有多个sample，可以理解为一个变量，可以存储很多数据每个数据可以是一个数也可以是一个数据包含很多个数，每一个数据被称为channel，数据如果由多个数组成，那么每个数被称为sample。不同的CHOP可以对输入或者自己产生的数据进行变化，比如constan CHOP会生成一个常亮，LFO CHOP会生成一个周期变化的数据等等。</p>
+<p>SOP会生成一个三维的模型或者对一个三维的模型进行变化</p>
+<p>MAT是材质的OP</p>
+<p>DAT有两种，一种是包含数据的，比如一个txt文本，或者一个table的表格。还有一种是作为一个脚本可以运行，因为TD是支持python脚本，所以可以在DAT里面写python的脚本来运行，不同的DAT可以在不同的情况下执行，比如CHOP execute可以在chop里面的数据发声变化时被调用</p>
+<p>COMP可以理解为其他种类的OP。这个有点复杂估计要单独说。</p>
+<p>每个OP都会有参数可以调节，通常界面的右上角会有，如果没有的话可以按下p这个按键调出。</p>
+<h1 id="数据流和引用">数据流和引用</h1>
+<p>因为每一个op都只能实现特定的一些简单功能，所以一个程序通常来说是由很多op连接而成的。所以每一个op会有或者没有一个或者多个输入或者输出，取决于他的功能。OP之间的连接会有两种方式：第一种是由一个op的输出连接到另外一个op的输入；另外一种方式是一个op的参数引用，另外一个op。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/781388-c4716bc0cb76de49.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="">
+比如这个程序里面我先用一个constant CHOP来生成一个Channel的数据交值是0.3。然后用一个math CHOP把这个数据乘以二，让它变成0.6。然后用一个constant top，让他参数中的颜色的r通道引用math生成的这个数据。我们我们就会得到一个r的值为0.6的颜色。可以看到如果是用第一种的数据流方式的话，在touchdesigner里面会用一条实线来表示。线条的颜色是和数据流的种类有关的，比如如果是chop的话，那它就是绿色，和op的颜色是相同的。如果是参数引用的话，会用一条白色的虚线来表示。</p>
+<h1 id="python">python</h1>
+<p>因为touchdesigner是支持python的，所以几乎所有参数的地方都可以是python的表达式，比如constant top的引用方式。</p>
+<p>看到这里，你应该去试着理解和记住一些常见的OP了。可以去看<a href="http://www.touchdesigner.co/">TD中文社区</a>这个网站的初级教程，或者官方的wiki。
+<a href="https://docs.derivative.ca/TOP">https://docs.derivative.ca/TOP</a>
+<a href="https://docs.derivative.ca/CHOP">https://docs.derivative.ca/CHOP</a>
+<a href="https://docs.derivative.ca/SOP">https://docs.derivative.ca/SOP</a>
+<a href="https://docs.derivative.ca/DAT">https://docs.derivative.ca/DAT</a>
+这些页面里每个都有一个sweet 16 xxxs下面列出了常用的16个这个种类的op</p>
+<h1 id="脚本的运行">脚本的运行</h1>
+<p>在TD里面是可以运行Python的脚本的。通常来说这样的脚本是放在不同的dat op里来执行的。而不同的dat op有不同的触发条件。
+比如CHOP execute是当关联的CHOP里面的数据发生变化时被调用的，DAT execute则是当关联的DAT发生变化时被执行。execute可以在程序启动，或者退出，或者每一帧开始的时候运行特定程序</p>
+<h1 id="搭建三维场景">搭建三维场景</h1>
+<p>TD中有一些固定模式，比如搭建三维场景就是其中最常用的一个。一个三维场景要有几个op来共同执行。
+<img src="https://upload-images.jianshu.io/upload_images/781388-6e11abf01897a5fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="">
+这里面geometry是一个场景，双击进去可以在里面放各种形状SOP，然后把每个SOP的render开关打开，这个SOP就可以被看到了，然后用一个cam去确定摄像机的位置和视角等，然后用一个light去照亮，最后用一个render TOP来渲染这个画面。
+其中geo的参数是比较多的，他有一个instance的功能，是可以把里面SOP进行阵列，可以通过CHOP或者dat把每一个样本的信息给到，并且还可以在material里面给定这些sop的材质。</p>
+<h1 id="参数设置">参数设置</h1>
+<p><img src="https://upload-images.jianshu.io/upload_images/781388-863c77d93b8faa72.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="">
+每个参数都有四种状态，第一种是常数，第二种是一个表达式，第三种是它可以输出给另外一个地方，第四种是可以和另外一个参数进行绑定。它使用的是Python inline的语法，类似这样：</p>
+<pre><code>xxx if yyy else zzz
+</code></pre>
+<p>#OP之间的转换
+其实TOP的画面也是由一个个像素组成的，所以其实可以把一个TOP里的每一个像素都变成一个channel，然后组成一个CHOP。同理，也可以用一个这样呢的CHOP转成TOP。类似的道理，SOP和CHOP，DAT和CHOP都是可以互相转换的，用类似TOP to这样的OP就可以</p>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+                <div id="comments">
+                    
+                    
+
+
+<section class="comments">
+<script src="https://utteranc.es/client.js"
+        repo="swortain/websiteComment"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+</section>
+
+                        
+                    </div> 
+
+                </div>
+
+                
+
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+<footer>
+
+    <section class="footer-Content">
+        <div class="container">
+
+
+            <ul class="footer-social">
+                <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100009586127081"><i class="lni-facebook-filled"></i></a></li>
+                <li><a class="linkedin" href="https://www.linkedin.com/in/jianwei-wang-a287ab7a/"><i class="lni-linkedin-fill"></i></a></li>
+               
+            </ul>
+
+
+
+        </div>
+    </section>
+
+
+
+</footer>
+
+
+    <a href="#" class="back-to-top">
+        <i class="lni-chevron-up"></i>
+    </a>
+
+    
+
+<script src="/js/jquery-min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.counterup.min.js"></script>
+<script src="/js/waypoints.min.js"></script>
+<script src="/js/wow.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/jquery.slicknav.js"></script>
+<script src="/js/main.js"></script>
+    <script src="/js/nivo-lightbox.js"></script>
+    <script src="/js/form-validator.min.js"></script>
+    <script src="/js/contact-form-script.min.js"></script>
+    <script src="/js/summernote.js"></script>
+
+    <div id="preloader">
+        <div class="loader" id="loader-1"></div>
+    </div>
+
+</body>
+
+</html>

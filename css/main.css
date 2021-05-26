@@ -37,8 +37,8 @@ html {
 body {
   background: #fff;
   font-size: 14px;
-  font-weight: 400;
-  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-family: "Noto Sans SC", sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -52,8 +52,10 @@ body {
 
 h1, h2, h3, h4 {
   font-size: 36px;
-  font-weight: 700;
-  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-family: "Noto Sans SC", sans-serif;
+  margin-top: 1.5em;
+  margin-bottom: 0.6em;
 }
 
 a {
@@ -72,10 +74,10 @@ a a:focus {
 }
 
 p {
-  font-weight: 400;
-  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+  font-family: "Noto Sans SC", sans-serif;
   margin: 0px;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 ul, ol {
@@ -2881,7 +2883,7 @@ Dashboard My Ads
 
 .blog-post .entry-summary {
   margin: 15px 0 30px;
-  line-height: 26px;
+  line-height: 50px;
 }
 
 .quote-post .quote-wrap {
@@ -3807,7 +3809,7 @@ footer .menu li a:hover {
 
 .panel-default .panel-heading a:after {
   font-family: "LineIcons";
-  content: "\e9d6";
+  content: "\e9bc";
   position: absolute;
   left: 0px;
   color: #00cc67;
@@ -3818,7 +3820,7 @@ footer .menu li a:hover {
 }
 
 .panel-default .panel-heading .collapsed:after {
-  content: "\e9bc";
+  content: "\e9d6";
 }
 
 .panel-default .panel-collapse .panel-body {
