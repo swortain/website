@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title></title>
+    <title>剑山的个人网站 - insar-socket | 装置插座</title>
 
 
     
@@ -154,7 +154,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="breadcrumb-wrapper">
-                        <h2 class="product-title"></h2>
+                        <h2 class="product-title">insar-socket | 装置插座</h2>
                         <ol class="breadcrumb">
                             <li class="current"> Home/project/insar-socket/ </li>
                         </ol>
@@ -182,22 +182,47 @@
 
 
                         
+                        <img style="width: 100%;" class="img-fluid" src="https://source.unsplash.com/800x300/?city"
+                            alt="">
+
+
+                        
                         <div class="hover-wrap">
                         </div>
                     </div>
 
 
                     <div class="post-content">
-                        <h2 class="post-title"></h2>
+                        <h2 class="post-title">insar-socket | 装置插座</h2>
                         <div class="meta">
-                            <span class="meta-part"><i class="lni-user"></i>  </span>
-                            <span class="meta-part"></i>  January 1,
-                                1 </span>
+                            <span class="meta-part"><i class="lni-user"></i> 剑山 </span>
+                            <span class="meta-part"></i>  May 26,
+                                2021 </span>
 
                             
                         </div>
                         <div class="entry-summary">
-                            
+                            <p>insar-socket是我的第一个产品类的作品，主要的功能是支持Modbus-TCP的插座，可以让你在装置项目中集成一个220的电器，而不需要你懂任何的电子电路知识。
+我还写了一写装置软件的库（目前位置仅支持了TouchDesigner）。这样你甚至不需要了解Modbus的相关知识，只需要配网，和软件内部的一些设置即可。</p>
+<h1 id="配网">配网</h1>
+<p>设备第一次链接WiFi时需要进行配网操作，让设备知道需要链接的WiFi的SSID和密码。这个操作如果不更换链接WiFi的名称和密码的情况下，只需要做一次，后面设备每次开机会自动连接最近一次设置的WiFi。</p>
+<h2 id="上电">上电</h2>
+<p>先给设备供电，按钮处红色LED常亮，并且黄色LED缓慢闪烁，此时可以搜索到一个「insar_config_」开头的wifi热点。</p>
+<div style="text-align: center;"><img src="Screenshot_2021-05-25-17-42-39-350_com.android.settings.jpg"     style="width:40%"    ></div>
+<p>连接后会自动弹出一个页面（在iphone上通常会自动弹出）或者显示需登录/认证（在我的小米手机上是这样的）点击后弹出页面</p>
+<div style="text-align: center;"><img src="Screenshot_2021-05-25-17-42-42-833_com.android.htmlviewer.jpg"     style="width:40%"    ></div>
+<p>点击Configure WiFi</p>
+<div style="text-align: center;"><img src="Screenshot_2021-05-25-17-43-37-072_com.android.htmlviewer.jpg"     style="width:40%"    ></div>
+<p>点击要连接的WiFi名称，在密码行填入密码</p>
+<div style="text-align: center;"><img src="Screenshot_2021-05-25-17-43-47-722_com.android.htmlviewer.jpg"     style="width:40%"    ></div>
+<p>点击save后设备后自动重启后链接wifi。黄色LED闪烁几次后常亮，表示已经成功连上WiFi</p>
+<h1 id="touchdesigner库">TouchDesigner库</h1>
+<p>首先电脑要和设备连入同一个wifi。打开insar-socket.toe这个文件，在insar_socket OP的参数里有一个search点击旁边的pulse会自动搜索局域网内所有的设备。</p>
+<div style="text-align: center;"><img src="1621935987%281%29.png"     style="width:100%"    ></div>
+<p>搜索完成后会弹出一个窗口，点击ok后IP Address会列出所有局域网内所有的设备的IP地址。</p>
+<div style="text-align: center;"><img src="1621936092%281%29.jpg"     style="width:100%"    ></div>
+<p>在左边连入一个CHOP，当里面任意一个channel从0变为非零的时候会打开插座，反之会关闭插座</p>
+
                         </div>
                         
                     </div>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project on 剑山的个人网站</title>
-    <link>http://www.swortain.wang/project/</link>
-    <description>Recent content in Project on 剑山的个人网站</description>
+    <title>硬件 on 剑山的个人网站</title>
+    <link>http://www.swortain.wang/tags/%E7%A1%AC%E4%BB%B6/</link>
+    <description>Recent content in 硬件 on 剑山的个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 13 May 2021 23:35:35 +0800</lastBuildDate><atom:link href="http://www.swortain.wang/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 May 2021 15:18:29 +0800</lastBuildDate><atom:link href="http://www.swortain.wang/tags/%E7%A1%AC%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>insar-socket | 装置插座</title>
       <link>http://www.swortain.wang/project/insar-socket/</link>
@@ -14,15 +14,6 @@
       
       <guid>http://www.swortain.wang/project/insar-socket/</guid>
       <description>insar-socket是我的第一个产品类的作品，主要的功能是支持Modbus-TCP的插座，可以让你在装置项目中集成一个220的电器，而不需要你懂任何的电子电路知识。 我还写了一写装置软件的库（目前位置仅支持了TouchDesigner）。这样你甚至不需要了解Modbus的相关知识，只需要配网，和软件内部的一些设置即可。 配网 设备第一次链接WiFi时需要进行配网操作，让设备知道需要链接的WiFi的S</description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>http://www.swortain.wang/project/test/</link>
-      <pubDate>Wed, 26 May 2021 15:18:29 +0800</pubDate>
-      
-      <guid>http://www.swortain.wang/project/test/</guid>
-      <description>测试内容</description>
     </item>
     
   </channel>
