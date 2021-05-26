@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>剑山的个人网站</title>
+    <link>http://www.swortain.wang/blog/</link>
+    <description>Recent content on 剑山的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 15 May 2021 00:33:42 +0800</lastBuildDate><atom:link href="http://www.swortain.wang/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一篇文章</title>
+      <link>http://www.swortain.wang/blog/first/</link>
+      <pubDate>Sat, 15 May 2021 00:33:42 +0800</pubDate>
+      
+      <guid>http://www.swortain.wang/blog/first/</guid>
+      <description>这是第一篇文章，不出意外的话这里主要是记录一些经过整理的文章（如果有的话。。。），主要的碎片文章还是会更新到简书上。 个人网站主要还是为了展示做过的项目，和作为个人项目经历的目的。</description>
+    </item>
+    
+    <item>
+      <title>第二篇博客</title>
+      <link>http://www.swortain.wang/blog/second/</link>
+      <pubDate>Sat, 15 May 2021 00:33:42 +0800</pubDate>
+      
+      <guid>http://www.swortain.wang/blog/second/</guid>
+      <description>这是第二篇文章，为了测试，所有有很多数据。 这是第二篇文章，为了测试，所有有很多数据。 这是第二篇文章，为了测试，所有有很多数据。 这是第二篇文章，为了测试，所有有很多数据。 这是第二篇文章，为了测试，所有有很多数据。 这是第二篇文章，为了测试，所有有很多数据。 这是第二篇文章，为了测试，所有有很多数据。 这是第二篇文章，为了测试，所有有很多数据。 这是第二篇文章，为了测试，所有有很多数据。 这是第二篇文章，为了测</description>
+    </item>
+    
+  </channel>
+</rss>
