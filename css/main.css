@@ -439,6 +439,11 @@ a.back-to-top:hover, a.back-to-top:focus {
   z-index: 1;
 }
 
+.page-header .breadcrumb-wrapper h1 {
+  font-size: 36px;
+  color: #00cc67;
+}
+
 .page-header .breadcrumb-wrapper .breadcrumb li {
   display: inline-block;
 }
@@ -784,6 +789,7 @@ a.back-to-top:hover, a.back-to-top:focus {
     background: #f5f5f5;
     color: #E91E63;
   }
+  
 }
 
 /* ==========================================================================
@@ -1017,22 +1023,29 @@ a.back-to-top:hover, a.back-to-top:focus {
   font-size: 14px;
   line-height: 18px;
   list-style: none;
-  margin: 0 0 12px;
+  margin: 0 auto;
   padding: 20px 0 10px;
   border-bottom: 1px solid #dbdbdb;
+  
 }
 
 .featured-box .feature-content .tg-product a {
   color: #999;
 }
 
-.featured-box .feature-content h4 {
-  font-size: 18px;
+.featured-box .feature-content h2 {
+  font-size: 36px;
   line-height: 26px;
-  margin-bottom: 0;
+  margin-top: 1.0em;
+  
 }
 
-.featured-box .feature-content h4 a {
+.featured-box .feature-content p {
+  margin-bottom: 1.0em;
+  
+}
+
+.featured-box .feature-content h2 a {
   color: #00cc67;
 }
 

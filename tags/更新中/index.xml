@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>更新中 on 剑山的个人网站</title>
-    <link>http://swortain.github.io/website/tags/%E6%9B%B4%E6%96%B0%E4%B8%AD/</link>
+    <link>http://swortain.github.io/tags/%E6%9B%B4%E6%96%B0%E4%B8%AD/</link>
     <description>Recent content in 更新中 on 剑山的个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 26 May 2021 16:55:51 +0800</lastBuildDate><atom:link href="http://swortain.github.io/website/tags/%E6%9B%B4%E6%96%B0%E4%B8%AD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 May 2021 16:55:51 +0800</lastBuildDate><atom:link href="http://swortain.github.io/tags/%E6%9B%B4%E6%96%B0%E4%B8%AD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TouchDesigner入门教程</title>
-      <link>http://swortain.github.io/website/blog/touchdesigner-intro/</link>
+      <link>http://swortain.github.io/blog/touchdesigner-intro/</link>
       <pubDate>Wed, 26 May 2021 16:55:51 +0800</pubDate>
       
-      <guid>http://swortain.github.io/website/blog/touchdesigner-intro/</guid>
+      <guid>http://swortain.github.io/blog/touchdesigner-intro/</guid>
       <description>其实很久以前就接触过TouchDesigner这个软件，但是当时对这种连线式的编程方式还是比较抗拒，所以只是大概了解了一下就没有继续看了。但是最近有一个项目用到了kinect azure，然后TD对这个东西的支持比较好，所以就用TD做了一次项目。发现和原来用processing写程序的感受还是挺不一样的。最近周围的人越来越多开始用td做项目。所以想开始写一些td的入门教程和防止自己后面会忘记，也给想</description>
     </item>
     

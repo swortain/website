@@ -191,6 +191,16 @@
         itemList.removeClass("make-compact");
       });
 
-  });      
+  });
+  
+  // 搜索相关代码
+  $('#search-btn').click(function(){
+    var url = "/search/?s="+$("#search-input").val();
+    window.location.href = url;
+
+    console.log(url);
+
+
+  })
 
 }(jQuery));

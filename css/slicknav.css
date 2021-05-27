@@ -125,6 +125,10 @@
     margin: 2px 5px;
     text-decoration: none;
     color: #666; }
+    
+  .slicknav_nav a:hover, .slicknav_nav .active{
+      color: #00cc67;
+    }
   .slicknav_nav .slicknav_txtnode {
     margin-left: 15px; }
   .slicknav_nav .slicknav_item a {

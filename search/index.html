@@ -3,12 +3,11 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>剑山的个人网站 - tags</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>剑山的个人网站 - </title>
 
-
-    
+  
 
 <link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/bootstrap.min.css">
 
@@ -31,18 +30,14 @@
 
 
 
-
-
-    <link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/nivo-lightbox.css">
+  <link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/nivo-lightbox.css">
 
 
 </head>
 
 <body>
-
-    <header id="header-wrap">
-
-        
+  <header id="header-wrap">
+    
 
 <nav class="navbar navbar-expand-lg fixed-top  scrolling-navbar">
 
@@ -161,80 +156,40 @@
 
 </nav>
 
+  </header>
 
-    </header>
-
-
-    <div class="page-header" style="background: url(/img/banner1.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="breadcrumb-wrapper">
-                        <h2 class="product-title">商业项目</h2>
-
-                    </div>
-                </div>
-            </div>
+  <div class="page-header" style="background: url(http://swortain.github.io/img/banner1.jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="breadcrumb-wrapper">
+            <h1 id="search-query"></h1>
+          </div>
         </div>
+      </div>
     </div>
-
-    <div class="faq section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="panel-group" id="accordion">
-
-                        
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" class="collapsed" href="#collapse0">
-                                        insar-socket | 装置插座 &nbsp; &nbsp;
-
-                                        <i class="lni-user"></i> 剑山&nbsp;
-                                        <i class="lni-alarm-clock"></i>May26,2021&nbsp;
-                                        <i class="lni-folder"></i> project
-                                        
-
-                                    </a>
-
-                                    
-                                </h4>
-                            </div>
-
-                            <div id="collapse0" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <p style="font-size: 14px; line: height 1.0em;">insar-socket是我的第一个产品类的作品，主要的功能是支持Modbus-TCP的插座，可以让你在装置项目中集成一个220的电器，而不需要你懂任何的电子电路知识。 我还写了一写装置软件的库（目前位置仅支持了TouchDesigner）。这样你甚至不需要了解Modbus的相关知识，只需要配网，和软件内部的一些设置即可。 PCB效果图 教程 一、配网 设备第一次链接WiFi时需要进行配网操作，让设备知道需</p>
-                                    <br />
-                                    <br />
-                                    <a href="/project/insar-socket/" class="btn btn-common btn-rm">Read More</a>
-                                </div>
-                            </div>
-
-                            
-
-                        </div>
-
-                        
+  </div>
 
 
+  <div id="content" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12">
 
 
-
-                    </div>
-                </div>
-
+          <section>
+            <div>
+              <div id="search-results">
+              </div>
             </div>
+          </section>
+
         </div>
+      </div>
     </div>
-    </div>
+  </div>
 
-
-
-
-
-    
+  
 <footer>
 
     <section class="footer-Content">
@@ -273,17 +228,32 @@
 
 </footer>
 
-    <a href="#" class="back-to-top">
-        <i class="lni-chevron-up"></i>
-    </a>
+  <a href="#" class="back-to-top">
+    <i class="lni-chevron-up"></i>
+  </a>
 
-    <div id="preloader">
-        <div class="loader" id="loader-1"></div>
-    </div>
+  <div id="preloader">
+    <div class="loader" id="loader-1"></div>
+  </div>
 
 
 
-    
+  <script id="search-result-template" type="text/x-js-template">
+    <div id="summary-${key}" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="featured-box">
+          <div class="feature-content">
+              <h2><a href="${link}">${title}</a></h2>
+              
+              ${ isset tags }<div class="tg-product"><p>Tags: &nbsp; &nbsp;${tags}</p></div><br /><br /><br />${ end }
+              <p>${snippet}</p>
+             
+          </div>
+      </div>
+  </div>
+  <br />
+  </script>
+
+  
 
 <script src="http://swortain.github.io/js/jquery-min.js"></script>
 <script src="http://swortain.github.io/js/fuse.min.js"></script>
@@ -298,11 +268,9 @@
 <script src="http://swortain.github.io/js/jquery.slicknav.js"></script>
 <script src="http://swortain.github.io/js/main.js"></script>
 
+  <script src="http://swortain.github.io/js/jquery.mark.min.js"></script>
 
-    <script src="/js/nivo-lightbox.js"></script>
-    <script src="/js/form-validator.min.js"></script>
-    <script src="/js/contact-form-script.min.js"></script>
-    <script src="/js/summernote.js"></script>
+
 </body>
 
 </html>

@@ -10,27 +10,27 @@
 
     
 
-<link rel="stylesheet" type="text/css" href="http://swortain.github.io/website/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/bootstrap.min.css">
 
-<link rel="stylesheet" type="text/css" href="http://swortain.github.io/website/fonts/line-icons.css">
+<link rel="stylesheet" type="text/css" href="http://swortain.github.io/fonts/line-icons.css">
 
-<link rel="stylesheet" type="text/css" href="http://swortain.github.io/website/css/slicknav.css">
-
-
+<link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/slicknav.css">
 
 
-<link rel="stylesheet" type="text/css" href="http://swortain.github.io/website/css/animate.css">
 
-<link rel="stylesheet" type="text/css" href="http://swortain.github.io/website/css/owl.carousel.css">
 
-<link rel="stylesheet" type="text/css" href="http://swortain.github.io/website/css/main.css">
+<link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/animate.css">
 
-<link rel="stylesheet" type="text/css" href="http://swortain.github.io/website/css/responsive.css">
+<link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/owl.carousel.css">
+
+<link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/main.css">
+
+<link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/responsive.css">
 
 <link href='https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,500' rel='stylesheet'>
 
 
-    <link rel="stylesheet" type="text/css" href="/css/nivo-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/nivo-lightbox.css">
 
 </head>
 
@@ -42,55 +42,65 @@
 
 <nav class="navbar navbar-expand-lg fixed-top  scrolling-navbar">
 
+
+
   
   <div class="container">
+
     
-    <div class="navbar-header">
+
+    <div class="navbar-header ">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
         aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <span class="lni-menu"></span>
-        <span class="lni-menu"></span>
-        <span class="lni-menu"></span>
       </button>
-      <a href="/" class="navbar-brand"><img src="/img/logo.png" alt=""></a>
+      <a href="/" class="navbar-brand"><img src="http://swortain.github.io/img/logo.png" alt=""></a>
     </div>
 
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="navbar-nav mr-auto" style="width:100%">
-        
-        <li class="nav-item " style="flex: auto;">
-          <a class="nav-link" href="/website/" style="text-align: center;">
-            Home|主页
-          </a>
-        </li>
+    <div class="collapse navbar-collapse row" id="main-navbar">
+      <div class="col-md-9">
+        <ul class="navbar-nav mr-auto ">
+          
+          <li class="nav-item " style="flex: auto;">
+            <a class="nav-link " href="/" style="text-align: center;">
+              Home|主页
+            </a>
+          </li>
+          
+          <li class="nav-item " style="flex: auto;">
+            <a class="nav-link " href="/project/" style="text-align: center;">
+              project|项目
+            </a>
+          </li>
+          
+          <li class="nav-item " style="flex: auto;">
+            <a class="nav-link " href="/portfolio/" style="text-align: center;">
+              portfolio|作品集
+            </a>
+          </li>
+          
+          <li class="nav-item " style="flex: auto;">
+            <a class="nav-link " href="/blog/" style="text-align: center;">
+              blog|博客
+            </a>
+          </li>
+          
+        </ul>
+      </div>
 
-        
-        <li class="nav-item " style="flex: auto;">
-          <a class="nav-link" href="/website/project/" style="text-align: center;">
-            project|项目
-          </a>
-        </li>
+      <div class="input-group col-md-3 ">
+        <input type="search" class="form-control" autocomplete="off" name="s" placeholder="Search..." id="search-input"
+          value="" style="background-color: transparent;">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="search-btn"><i class="lni-search"></i></button>
+        </div>
 
-        
-        <li class="nav-item " style="flex: auto;">
-          <a class="nav-link" href="/website/portfolio/" style="text-align: center;">
-            portfolio|作品集
-          </a>
-        </li>
+      </div>
 
-        
-        <li class="nav-item " style="flex: auto;">
-          <a class="nav-link" href="/website/blog/" style="text-align: center;">
-            blog|博客
-          </a>
-        </li>
-
-        
-      </ul>
 
     </div>
+
   </div>
+
 
   
   <ul class="mobile-menu">
@@ -99,7 +109,7 @@
 
     <li class="nav-item ">
 
-      <a class="nav-link" href="/website/">
+      <a class="nav-link " href="/">
         Home|主页
       </a>
     </li>
@@ -108,7 +118,7 @@
 
     <li class="nav-item ">
 
-      <a class="nav-link" href="/website/project/">
+      <a class="nav-link " href="/project/">
         project|项目
       </a>
     </li>
@@ -117,7 +127,7 @@
 
     <li class="nav-item ">
 
-      <a class="nav-link" href="/website/portfolio/">
+      <a class="nav-link " href="/portfolio/">
         portfolio|作品集
       </a>
     </li>
@@ -126,12 +136,21 @@
 
     <li class="nav-item ">
 
-      <a class="nav-link" href="/website/blog/">
+      <a class="nav-link " href="/blog/">
         blog|博客
       </a>
     </li>
 
     
+
+    <div class="input-group col-md-12 " style="padding-bottom: 1.0em">
+      <input type="search" class="form-control" autocomplete="off" name="s" placeholder="Search..." id="search-input"
+        value="" style="background-color: transparent;">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="search-btn"><i class="lni-search"></i></button>
+      </div>
+
+    </div>
 
   </ul>
   
@@ -150,7 +169,7 @@
                     <div class="breadcrumb-wrapper">
                         <h2 class="product-title">TouchDesigner入门教程</h2>
                         <ol class="breadcrumb">
-                            <li class="current"> Home/website/blog/touchdesigner-intro/ </li>
+                            <li class="current"> Home/blog/touchdesigner-intro/ </li>
                         </ol>
                     </div>
                 </div>
@@ -267,16 +286,33 @@ COMP、TOP、CHOP、SOP、MAT、DAT、Custom。
 
     <section class="footer-Content">
         <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 offset-md-2 offset-lg-2 offset-sm-2">
+                    <div class="widget">
+                        <h3 class="block-title">联系方式</h3>
+                        <ul class="contact-footer">
+                            <li>
+                                <strong>邮箱 :</strong><span><a href="mailto:jianshan_54@126.com">jianshan_54@126.com</a></span>
+                            </li>
+                            <li>
+                                <strong>简书 :</strong><span><a href="http://www.jianshu.com/u/45d8f935d361">www.jianshu.com/u/45d8f935d361</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+                    <div class="widget">
+                        <h3 class="block-title">社交媒体</h3>
+                        <ul class="footer-social">
+                            <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100009586127081"><i
+                                        class="lni-facebook-filled"></i></a></li>
+                            <li><a class="linkedin" href="https://www.linkedin.com/in/jianwei-wang-a287ab7a/"><i
+                                        class="lni-linkedin-fill"></i></a></li>
 
-
-            <ul class="footer-social">
-                <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100009586127081"><i class="lni-facebook-filled"></i></a></li>
-                <li><a class="linkedin" href="https://www.linkedin.com/in/jianwei-wang-a287ab7a/"><i class="lni-linkedin-fill"></i></a></li>
-               
-            </ul>
-
-
-
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -291,19 +327,23 @@ COMP、TOP、CHOP、SOP、MAT、DAT、Custom。
 
     
 
-<script src="http://swortain.github.io/website/js/jquery-min.js"></script>
-<script src="http://swortain.github.io/website/js/popper.min.js"></script>
-<script src="http://swortain.github.io/website/js/bootstrap.min.js"></script>
-<script src="http://swortain.github.io/website/js/jquery.counterup.min.js"></script>
-<script src="http://swortain.github.io/website/js/waypoints.min.js"></script>
-<script src="http://swortain.github.io/website/js/wow.js"></script>
-<script src="http://swortain.github.io/website/js/owl.carousel.min.js"></script>
-<script src="http://swortain.github.io/website/js/jquery.slicknav.js"></script>
-<script src="http://swortain.github.io/website/js/main.js"></script>
-    <script src="/js/nivo-lightbox.js"></script>
-    <script src="/js/form-validator.min.js"></script>
-    <script src="/js/contact-form-script.min.js"></script>
-    <script src="/js/summernote.js"></script>
+<script src="http://swortain.github.io/js/jquery-min.js"></script>
+<script src="http://swortain.github.io/js/fuse.min.js"></script>
+<script src="http://swortain.github.io/js/fastsearch.min.js"></script>
+<script src="http://swortain.github.io/js/search.js"></script>
+<script src="http://swortain.github.io/js/popper.min.js"></script>
+<script src="http://swortain.github.io/js/bootstrap.min.js"></script>
+<script src="http://swortain.github.io/js/jquery.counterup.min.js"></script>
+<script src="http://swortain.github.io/js/waypoints.min.js"></script>
+<script src="http://swortain.github.io/js/wow.js"></script>
+<script src="http://swortain.github.io/js/owl.carousel.min.js"></script>
+<script src="http://swortain.github.io/js/jquery.slicknav.js"></script>
+<script src="http://swortain.github.io/js/main.js"></script>
+
+    <script src="http://swortain.github.io/js/nivo-lightbox.js"></script>
+    <script src="http://swortain.github.io/js/form-validator.min.js"></script>
+    <script src="http://swortain.github.io/js/contact-form-script.min.js"></script>
+    <script src="http://swortain.github.io/js/summernote.js"></script>
 
     <div id="preloader">
         <div class="loader" id="loader-1"></div>

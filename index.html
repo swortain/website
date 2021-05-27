@@ -12,22 +12,22 @@
 
   
 
-<link rel="stylesheet" type="text/css" href="http://swortain.github.io/website/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/bootstrap.min.css">
 
-<link rel="stylesheet" type="text/css" href="http://swortain.github.io/website/fonts/line-icons.css">
+<link rel="stylesheet" type="text/css" href="http://swortain.github.io/fonts/line-icons.css">
 
-<link rel="stylesheet" type="text/css" href="http://swortain.github.io/website/css/slicknav.css">
-
-
+<link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/slicknav.css">
 
 
-<link rel="stylesheet" type="text/css" href="http://swortain.github.io/website/css/animate.css">
 
-<link rel="stylesheet" type="text/css" href="http://swortain.github.io/website/css/owl.carousel.css">
 
-<link rel="stylesheet" type="text/css" href="http://swortain.github.io/website/css/main.css">
+<link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/animate.css">
 
-<link rel="stylesheet" type="text/css" href="http://swortain.github.io/website/css/responsive.css">
+<link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/owl.carousel.css">
+
+<link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/main.css">
+
+<link rel="stylesheet" type="text/css" href="http://swortain.github.io/css/responsive.css">
 
 <link href='https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,500' rel='stylesheet'>
 
@@ -47,64 +47,74 @@
 
 <nav class="navbar navbar-expand-lg fixed-top  scrolling-navbar">
 
+
+
   
   <div class="container">
+
     
-    <div class="navbar-header">
+
+    <div class="navbar-header ">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
         aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <span class="lni-menu"></span>
-        <span class="lni-menu"></span>
-        <span class="lni-menu"></span>
       </button>
-      <a href="/" class="navbar-brand"><img src="/img/logo.png" alt=""></a>
+      <a href="/" class="navbar-brand"><img src="http://swortain.github.io/img/logo.png" alt=""></a>
     </div>
 
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="navbar-nav mr-auto" style="width:100%">
-        
-        <li class="nav-item active" style="flex: auto;">
-          <a class="nav-link" href="/website/" style="text-align: center;">
-            Home|主页
-          </a>
-        </li>
+    <div class="collapse navbar-collapse row" id="main-navbar">
+      <div class="col-md-9">
+        <ul class="navbar-nav mr-auto ">
+          
+          <li class="nav-item active" style="flex: auto;">
+            <a class="nav-link " href="/" style="text-align: center;">
+              Home|主页
+            </a>
+          </li>
+          
+          <li class="nav-item " style="flex: auto;">
+            <a class="nav-link " href="/project/" style="text-align: center;">
+              project|项目
+            </a>
+          </li>
+          
+          <li class="nav-item " style="flex: auto;">
+            <a class="nav-link " href="/portfolio/" style="text-align: center;">
+              portfolio|作品集
+            </a>
+          </li>
+          
+          <li class="nav-item " style="flex: auto;">
+            <a class="nav-link " href="/blog/" style="text-align: center;">
+              blog|博客
+            </a>
+          </li>
+          
+        </ul>
+      </div>
 
-        
-        <li class="nav-item " style="flex: auto;">
-          <a class="nav-link" href="/website/project/" style="text-align: center;">
-            project|项目
-          </a>
-        </li>
+      <div class="input-group col-md-3 ">
+        <input type="search" class="form-control" autocomplete="off" name="s" placeholder="Search..." id="search-input"
+          value="" style="background-color: transparent;">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="search-btn"><i class="lni-search"></i></button>
+        </div>
 
-        
-        <li class="nav-item " style="flex: auto;">
-          <a class="nav-link" href="/website/portfolio/" style="text-align: center;">
-            portfolio|作品集
-          </a>
-        </li>
+      </div>
 
-        
-        <li class="nav-item " style="flex: auto;">
-          <a class="nav-link" href="/website/blog/" style="text-align: center;">
-            blog|博客
-          </a>
-        </li>
-
-        
-      </ul>
 
     </div>
+
   </div>
+
 
   
   <ul class="mobile-menu">
 
     
 
-    <li class="nav-item active">
+    <li class="nav-item ">
 
-      <a class="nav-link" href="/website/">
+      <a class="nav-link active" href="/">
         Home|主页
       </a>
     </li>
@@ -113,7 +123,7 @@
 
     <li class="nav-item ">
 
-      <a class="nav-link" href="/website/project/">
+      <a class="nav-link " href="/project/">
         project|项目
       </a>
     </li>
@@ -122,7 +132,7 @@
 
     <li class="nav-item ">
 
-      <a class="nav-link" href="/website/portfolio/">
+      <a class="nav-link " href="/portfolio/">
         portfolio|作品集
       </a>
     </li>
@@ -131,12 +141,21 @@
 
     <li class="nav-item ">
 
-      <a class="nav-link" href="/website/blog/">
+      <a class="nav-link " href="/blog/">
         blog|博客
       </a>
     </li>
 
     
+
+    <div class="input-group col-md-12 " style="padding-bottom: 1.0em">
+      <input type="search" class="form-control" autocomplete="off" name="s" placeholder="Search..." id="search-input"
+        value="" style="background-color: transparent;">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="search-btn"><i class="lni-search"></i></button>
+      </div>
+
+    </div>
 
   </ul>
   
@@ -171,15 +190,15 @@
   
   <section class="trending-cat section-padding">
     <div class="container">
-      <a href="/tags">
+      <a href="http://swortain.github.io/tags">
         <h1 class="section-title">个人兴趣</h1>
       </a>
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-          <a href="/tags/交互装置">
+          <a href="http://swortain.github.io/tags/交互装置">
             <div class="box">
               <div class="icon">
-                <img class="img-fluid" src="img/category/art_logo.png" alt="">
+                <img class="img-fluid" src="http://swortain.github.io/img/category/art_logo.png" alt="">
               </div>
               <h4>交互装置</h4>
               
@@ -213,15 +232,17 @@
               
               
               
+              
+              
               <strong>0 Pages</strong>
             </div>
           </a>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-          <a href="/tags/创客">
+          <a href="http://swortain.github.io/tags/创客">
             <div class="box">
               <div class="icon">
-                <img class="img-fluid" src="img/category/maker_logo.png" alt="">
+                <img class="img-fluid" src="http://swortain.github.io/img/category/maker_logo.png" alt="">
               </div>
               <h4>创客</h4>
               
@@ -255,15 +276,17 @@
               
               
               
+              
+              
               <strong>0 Pages</strong>
             </div>
           </a>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-          <a href="/tags/Arduino">
+          <a href="http://swortain.github.io/tags/Arduino">
             <div class="box">
               <div class="icon">
-                <img class="img-fluid" src="img/category/arduino_logo.png" alt="">
+                <img class="img-fluid" src="http://swortain.github.io/img/category/arduino_logo.png" alt="">
               </div>
               <h4>Arduino</h4>
               
@@ -297,17 +320,21 @@
               
               
               
+              
+              
               <strong>0 Pages</strong>
             </div>
           </a>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-          <a href="/tags/Processing">
+          <a href="http://swortain.github.io/tags/Processing">
             <div class="box">
               <div class="icon">
-                <img class="img-fluid" src="img/category/processing_logo.png" alt="">
+                <img class="img-fluid" src="http://swortain.github.io/img/category/processing_logo.png" alt="">
               </div>
               <h4>Processing</h4>
+              
+              
               
               
               
@@ -345,12 +372,14 @@
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-          <a href="/tags/touchdesigner">
+          <a href="http://swortain.github.io/tags/touchdesigner">
             <div class="box">
               <div class="icon">
-                <img class="img-fluid" src="img/category/TD_logo.png" alt="">
+                <img class="img-fluid" src="http://swortain.github.io/img/category/TD_logo.png" alt="">
               </div>
               <h4>TouchDesigner</h4>
+              
+              
               
               
               
@@ -392,12 +421,14 @@
           </a>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-          <a href="/tags/电子电路">
+          <a href="http://swortain.github.io/tags/电子电路">
             <div class="box">
               <div class="icon">
-                <img class="img-fluid" src="img/category/circuit_logo.png" alt="">
+                <img class="img-fluid" src="http://swortain.github.io/img/category/circuit_logo.png" alt="">
               </div>
               <h4>电子电路</h4>
+              
+              
               
               
               
@@ -436,12 +467,14 @@
           </a>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-          <a href="/tags/Dota">
+          <a href="http://swortain.github.io/tags/Dota">
             <div class="box">
               <div class="icon">
-                <img class="img-fluid" src="img/category/dota_logo.png" alt="">
+                <img class="img-fluid" src="http://swortain.github.io/img/category/dota_logo.png" alt="">
               </div>
               <h4>Dota</h4>
+              
+              
               
               
               
@@ -478,12 +511,14 @@
           </a>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-          <a href="/tags/商业项目">
+          <a href="http://swortain.github.io/tags/商业项目">
             <div class="box">
               <div class="icon">
-                <img class="img-fluid" src="img/category/business_logo.png" alt="">
+                <img class="img-fluid" src="http://swortain.github.io/img/category/business_logo.png" alt="">
               </div>
               <h4>商业项目</h4>
+              
+              
               
               
               
@@ -543,7 +578,7 @@
             Blog
             <div class="services-content"
               style=" overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 5;">
-              <h3><a href="/website/blog/touchdesigner-intro/">TouchDesigner入门教程</a></h3>
+              <h3><a href="/blog/touchdesigner-intro/">TouchDesigner入门教程</a></h3>
               <p>其实很久以前就接触过TouchDesigner这个软件，但是当时对这种连线式的编程方式还是比较抗拒，所以只是大概了解了一下就没有继续看了。但是最近有一个项目用到了kinect azure，然后TD对这个东西的支持比较好，所以就用TD做了一次项目。发现和原来用processing写程序的感受还是挺不一样的。最近周围的人越来越多开始用td做项目。所以想开始写一些td的入门教程和防止自己后面会忘记，也给想</p>
             </div>
           </div>
@@ -558,7 +593,7 @@
             Blog
             <div class="services-content"
               style=" overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 5;">
-              <h3><a href="/website/blog/first/">第一篇文章</a></h3>
+              <h3><a href="/blog/first/">第一篇文章</a></h3>
               <p>这是第一篇文章，不出意外的话这里主要是记录一些经过整理的文章（如果有的话。。。），主要的碎片文章还是会更新到简书上。 个人网站主要还是为了展示做过的项目，和作为个人项目经历的目的。</p>
             </div>
           </div>
@@ -573,7 +608,7 @@
             Blog
             <div class="services-content"
               style=" overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 5;">
-              <h3><a href="/website/blog/">blog</a></h3>
+              <h3><a href="/blog/">blog</a></h3>
               <p>博客列表</p>
             </div>
           </div>
@@ -592,7 +627,7 @@
             project
             <div class="services-content"
               style=" overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 5;">
-              <h3><a href="/website/project/insar-socket/">insar-socket | 装置插座</a></h3>
+              <h3><a href="/project/insar-socket/">insar-socket | 装置插座</a></h3>
               <p>insar-socket是我的第一个产品类的作品，主要的功能是支持Modbus-TCP的插座，可以让你在装置项目中集成一个220的电器，而不需要你懂任何的电子电路知识。 我还写了一写装置软件的库（目前位置仅支持了TouchDesigner）。这样你甚至不需要了解Modbus的相关知识，只需要配网，和软件内部的一些设置即可。 PCB效果图 教程 一、配网 设备第一次链接WiFi时需要进行配网操作，让设备知道需</p>
             </div>
           </div>
@@ -607,7 +642,7 @@
             project
             <div class="services-content"
               style=" overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 5;">
-              <h3><a href="/website/project/">Project</a></h3>
+              <h3><a href="/project/">Project</a></h3>
               <p>项目列表</p>
             </div>
           </div>
@@ -708,16 +743,33 @@
 
     <section class="footer-Content">
         <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 offset-md-2 offset-lg-2 offset-sm-2">
+                    <div class="widget">
+                        <h3 class="block-title">联系方式</h3>
+                        <ul class="contact-footer">
+                            <li>
+                                <strong>邮箱 :</strong><span><a href="mailto:jianshan_54@126.com">jianshan_54@126.com</a></span>
+                            </li>
+                            <li>
+                                <strong>简书 :</strong><span><a href="http://www.jianshu.com/u/45d8f935d361">www.jianshu.com/u/45d8f935d361</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+                    <div class="widget">
+                        <h3 class="block-title">社交媒体</h3>
+                        <ul class="footer-social">
+                            <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100009586127081"><i
+                                        class="lni-facebook-filled"></i></a></li>
+                            <li><a class="linkedin" href="https://www.linkedin.com/in/jianwei-wang-a287ab7a/"><i
+                                        class="lni-linkedin-fill"></i></a></li>
 
-
-            <ul class="footer-social">
-                <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100009586127081"><i class="lni-facebook-filled"></i></a></li>
-                <li><a class="linkedin" href="https://www.linkedin.com/in/jianwei-wang-a287ab7a/"><i class="lni-linkedin-fill"></i></a></li>
-               
-            </ul>
-
-
-
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -738,15 +790,19 @@
 
   
 
-<script src="http://swortain.github.io/website/js/jquery-min.js"></script>
-<script src="http://swortain.github.io/website/js/popper.min.js"></script>
-<script src="http://swortain.github.io/website/js/bootstrap.min.js"></script>
-<script src="http://swortain.github.io/website/js/jquery.counterup.min.js"></script>
-<script src="http://swortain.github.io/website/js/waypoints.min.js"></script>
-<script src="http://swortain.github.io/website/js/wow.js"></script>
-<script src="http://swortain.github.io/website/js/owl.carousel.min.js"></script>
-<script src="http://swortain.github.io/website/js/jquery.slicknav.js"></script>
-<script src="http://swortain.github.io/website/js/main.js"></script>
+<script src="http://swortain.github.io/js/jquery-min.js"></script>
+<script src="http://swortain.github.io/js/fuse.min.js"></script>
+<script src="http://swortain.github.io/js/fastsearch.min.js"></script>
+<script src="http://swortain.github.io/js/search.js"></script>
+<script src="http://swortain.github.io/js/popper.min.js"></script>
+<script src="http://swortain.github.io/js/bootstrap.min.js"></script>
+<script src="http://swortain.github.io/js/jquery.counterup.min.js"></script>
+<script src="http://swortain.github.io/js/waypoints.min.js"></script>
+<script src="http://swortain.github.io/js/wow.js"></script>
+<script src="http://swortain.github.io/js/owl.carousel.min.js"></script>
+<script src="http://swortain.github.io/js/jquery.slicknav.js"></script>
+<script src="http://swortain.github.io/js/main.js"></script>
+
 
   <script>
     $('#suggest').click(function () {

@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blog on 剑山的个人网站</title>
-    <link>http://swortain.github.io/website/blog/</link>
+    <link>http://swortain.github.io/blog/</link>
     <description>Recent content in blog on 剑山的个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 13 May 2021 23:35:35 +0800</lastBuildDate><atom:link href="http://swortain.github.io/website/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 May 2021 23:35:35 +0800</lastBuildDate><atom:link href="http://swortain.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TouchDesigner入门教程</title>
-      <link>http://swortain.github.io/website/blog/touchdesigner-intro/</link>
+      <link>http://swortain.github.io/blog/touchdesigner-intro/</link>
       <pubDate>Wed, 26 May 2021 16:55:51 +0800</pubDate>
       
-      <guid>http://swortain.github.io/website/blog/touchdesigner-intro/</guid>
+      <guid>http://swortain.github.io/blog/touchdesigner-intro/</guid>
       <description>其实很久以前就接触过TouchDesigner这个软件，但是当时对这种连线式的编程方式还是比较抗拒，所以只是大概了解了一下就没有继续看了。但是最近有一个项目用到了kinect azure，然后TD对这个东西的支持比较好，所以就用TD做了一次项目。发现和原来用processing写程序的感受还是挺不一样的。最近周围的人越来越多开始用td做项目。所以想开始写一些td的入门教程和防止自己后面会忘记，也给想</description>
     </item>
     
     <item>
       <title>第一篇文章</title>
-      <link>http://swortain.github.io/website/blog/first/</link>
+      <link>http://swortain.github.io/blog/first/</link>
       <pubDate>Sat, 15 May 2021 00:33:42 +0800</pubDate>
       
-      <guid>http://swortain.github.io/website/blog/first/</guid>
+      <guid>http://swortain.github.io/blog/first/</guid>
       <description>这是第一篇文章，不出意外的话这里主要是记录一些经过整理的文章（如果有的话。。。），主要的碎片文章还是会更新到简书上。 个人网站主要还是为了展示做过的项目，和作为个人项目经历的目的。</description>
     </item>
     
