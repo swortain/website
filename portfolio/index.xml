@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>剑山的个人网站</title>
-    <link>http://www.swortain.wang/portfolio/</link>
+    <link>http://swortain.github.io/website/portfolio/</link>
     <description>Recent content on 剑山的个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="http://www.swortain.wang/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="http://swortain.github.io/website/portfolio/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
