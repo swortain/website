@@ -29,7 +29,7 @@ Domain Path:      /languages/
 /* ____Search */
 /* ____Testimonial */
 /* Google Fonts */
-@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+@import url("googlefont.css");
 html {
   overflow-x: hidden;
 }
@@ -556,6 +556,11 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #fff !important;
 }
 
+.top-nav-collapse .btn-outline-secondary{
+  color: #333;
+}
+
+
 .indigo {
   background: transparent;
 }
@@ -801,6 +806,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #fff;
   overflow: hidden;
   position: relative;
+  background-position:center
 }
 
 #hero-area .overlay {
@@ -3349,7 +3355,7 @@ blockquote {
   line-height: 26px;
   font-size: 14px;
   box-shadow: none;
-  color: #848484;
+  color: #fff;
   text-transform: capitalize;
   background: #ffffff;
   padding: 7px 19px;
@@ -3366,6 +3372,7 @@ blockquote {
   border-color: #00cc67;
   outline: 0;
   box-shadow: none;
+  color: #00cc67;
 }
 
 .login-area {
@@ -3958,3 +3965,21 @@ footer .menu li a:hover {
 .error-content .description a:hover {
   color: #00cc67;
 }
+
+/* 剑山网站用 */
+.btn-outline-secondary {
+  color: #e5e5e5;
+  background-color: transparent;
+  background-image: none;
+  border-color: #e5e5e5;
+}
+
+.post-thumb i{
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0; 
+    background-color: rgba(94, 94, 94, 0.6); 
+    transition: background-color .5s;
+}
+
+.post-thumb a:hover i { 
+  background-color: rgba(0, 0, 0, 0);
+ }
