@@ -51,7 +51,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-size: 36px;
+  /* font-size: 36px; */
   font-weight: 500;
   font-family: "Noto Sans SC", sans-serif;
   margin-top: 1.5em;
@@ -406,6 +406,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 .page-header {
   padding: 115px 0px 45px;
   position: relative;
+  background-size: cover;
 }
 
 .page-header:before {
@@ -3974,6 +3975,13 @@ footer .menu li a:hover {
   border-color: #e5e5e5;
 }
 
+.btn-outline-secondary:hover {
+  background-color: #02ab55;
+}
+
+
+
+
 .post-thumb i{
   position: absolute; top: 0; right: 0; bottom: 0; left: 0; 
     background-color: rgba(94, 94, 94, 0.6); 
@@ -3982,4 +3990,33 @@ footer .menu li a:hover {
 
 .post-thumb a:hover i { 
   background-color: rgba(0, 0, 0, 0);
+ }
+
+ blockquote {
+  color:#888;
+  background-color: #eeeeee74;
+  border-left: 1em solid #02ab55;
+  padding: 1em 1.5em 1em 1.5em;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  line-height: 150%;
+  text-indent: 35px;
+ }
+ blockquote:before {
+   color: #00cc67;
+   content: "\201C";
+   font-size: 5em;
+   position:absolute;
+   left:-15px;
+   top: 40px;
+   line-height: 0.1em;
+ }
+ blockquote:after {
+   color: #00cc67;
+   content: "\201D";
+   font-size: 5em;
+   position:absolute;
+   right:15px;
+   bottom: 0em;
+   line-height: 0.1em;
  }
