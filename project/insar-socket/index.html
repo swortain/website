@@ -158,8 +158,12 @@
     </header>
 
     
+    
+    
 
-    <div class="page-header" style="background: url(/project/insar-socket/head.jpg); background-size: cover;background-position: center">
+    
+        <div class="page-header"style="background: url(/project/insar-socket/head.jpg); background-size: cover;background-position: center">
+    
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -180,29 +184,29 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-xs-12">
 
-                <div class="blog-post single-post">
+                    <div class="blog-post single-post">
 
 
 
-                    <div class="post-thumb">
+                        <div class="post-thumb">
 
-                       
-                        <div class="hover-wrap">
+
+                            <div class="hover-wrap">
+                            </div>
                         </div>
-                    </div>
 
 
-                    <div class="post-content">
-                        <h2 class="post-title">insar-socket | 装置插座</h2>
-                        <div class="meta">
-                            <span class="meta-part"><i class="lni-user"></i> 剑山 </span>
-                            <span class="meta-part"></i>  May 26,
-                                2021 </span>
+                        <div class="post-content">
+                            <h2 class="post-title">insar-socket | 装置插座</h2>
+                            <div class="meta">
+                                <span class="meta-part"><i class="lni-user"></i> 剑山 </span>
+                                <span class="meta-part"></i>  May 26,
+                                    2021 </span>
 
-                            
-                        </div>
-                        <div class="entry-summary">
-                            <p> </p>
+                                
+                            </div>
+                            <div class="entry-summary">
+                                <p> </p>
 <p>insar-socket是我的第一个产品类的作品，主要的功能是支持Modbus-TCP的插座，可以让你在装置项目中集成一个220的电器，而不需要你懂任何的电子电路知识。
 我还写了一写装置软件的库（目前位置仅支持了TouchDesigner）。这样你甚至不需要了解Modbus的相关知识，只需要配网，和软件内部的一些设置即可。</p>
 <p> </p>
@@ -213,9 +217,9 @@
 <p>电压：由于接口采用国标规范，所以无法在国外使用，但是设计上采用100~240V，支持全球通用。</p>
 <hr>
 <h1 id="pcb效果图">PCB效果图</h1>
-<div style="text-align: center;"><img src="210408_insar_socket_wifi_v1.0_2021-May-24_12-47-55PM-000_CustomizedView17431953528.png"     style="width:100%"    ></div>
-<div style="text-align: center;"><img src="210408_insar_socket_wifi_v1.0_2021-May-24_12-48-13PM-000_CustomizedView12947416057.png"     style="width:100%"    ></div>
-<div style="text-align: center;"><img src="210408_insar_socket_wifi_v1.0_2021-May-24_12-48-39PM-000_CustomizedView24995213232.png"     style="width:100%"    ></div>
+<p><img src="210408_insar_socket_wifi_v1.0_2021-May-24_12-47-55PM-000_CustomizedView17431953528.png" alt=""></p>
+<p><img src="210408_insar_socket_wifi_v1.0_2021-May-24_12-48-13PM-000_CustomizedView12947416057.png" alt=""></p>
+<p><img src="210408_insar_socket_wifi_v1.0_2021-May-24_12-48-39PM-000_CustomizedView24995213232.png" alt=""></p>
 <p> 
  
  </p>
@@ -224,24 +228,24 @@
 <h2 id="配网">配网</h2>
 <p>设备第一次链接WiFi时需要进行配网操作，让设备知道需要链接的WiFi的SSID和密码。这个操作如果不更换链接WiFi的名称和密码的情况下，只需要做一次，后面设备每次开机会自动连接最近一次设置的WiFi。</p>
 <p>先给设备供电，按钮处红色LED常亮，并且黄色LED缓慢闪烁，此时可以搜索到一个「insar_config_」开头的wifi热点。</p>
-<div style="text-align: center;"><img src="Screenshot_2021-05-25-17-42-39-350_com.android.settings.jpg"     style="width:40%"    ></div>
+<p><img src="Screenshot_2021-05-25-17-42-39-350_com.android.settings.jpg" alt=""></p>
 <p>连接后会自动弹出一个页面（在iphone上通常会自动弹出）或者显示需登录/认证（在我的小米手机上是这样的）点击后弹出页面</p>
-<div style="text-align: center;"><img src="Screenshot_2021-05-25-17-42-42-833_com.android.htmlviewer.jpg"     style="width:40%"    ></div>
+<p><img src="Screenshot_2021-05-25-17-42-42-833_com.android.htmlviewer.jpg" alt=""></p>
 <p>点击Configure WiFi</p>
-<div style="text-align: center;"><img src="Screenshot_2021-05-25-17-43-37-072_com.android.htmlviewer.jpg"     style="width:40%"    ></div>
+<p><img src="Screenshot_2021-05-25-17-43-37-072_com.android.htmlviewer.jpg" alt=""></p>
 <p>点击要连接的WiFi名称，在密码行填入密码</p>
-<div style="text-align: center;"><img src="Screenshot_2021-05-25-17-43-47-722_com.android.htmlviewer.jpg"     style="width:40%"    ></div>
+<p><img src="Screenshot_2021-05-25-17-43-47-722_com.android.htmlviewer.jpg" alt=""></p>
 <p>点击save后设备后自动重启后链接wifi。黄色LED闪烁几次后常亮，表示已经成功连上WiFi</p>
 <h2 id="touchdesigner库">TouchDesigner库</h2>
 <p>首先电脑要和设备连入同一个wifi。打开insar-socket.toe这个文件，在insar_socket OP的参数里有一个search点击旁边的pulse会自动搜索局域网内所有的设备。</p>
-<div style="text-align: center;"><img src="1621935987%281%29.png"     style="width:100%"    ></div>
+<p><img src="1621935987(1).png" alt=""></p>
 <p>搜索完成后会弹出一个窗口，点击ok后IP Address会列出所有局域网内所有的设备的IP地址。</p>
-<div style="text-align: center;"><img src="1621936092%281%29.jpg"     style="width:100%"    ></div>
+<p><img src="1621936092(1).jpg" alt=""></p>
 <p>在左边连入一个CHOP，当里面任意一个channel从0变为非零的时候会打开插座，反之会关闭插座</p>
 <p> </p>
 <h2 id="后台管理界面">后台管理界面</h2>
 <p>在浏览器输入设备的IP地址，可以看到后台的管理界面，可以看到设备ID，固件版本，插座的通断以及可以控制插座的打开和关闭。</p>
-<div style="text-align: center;"><img src="1621936175%281%29.jpg"     style="width:100%"    ></div>
+<p><img src="1621936175(1).jpg" alt=""></p>
 <hr>
 <h1 id="基于其他平台实现二次开发">基于其他平台实现二次开发</h1>
 <p>如果你只是想在已有库的软件（比如目前的Touchdesigner）里面使用本设备的话，这一部分是不需要看的，如果你需要集成到其他的环境中，比如单片机（需要设备能联网，比如使用ESP32、ESP8266或者Arduino UNO加Ethernet shield或者STM32加W5100这些）、openFrameworks、Processing（相关库在计划当中）、或者更底层的比如java、python，那么你需要看下面这部分，同时你需要懂一些TCP/IP通讯相关的知识以及Modbus相关的一些概念。</p>
@@ -381,7 +385,7 @@
 <h1 id="硬件的二次开发">硬件的二次开发</h1>
 <p>设备出厂预制程序，如果只需要使用的话这一部分是不需要看的，如果想基于现有硬件二次开发，那么你需要了解ESP32的相关知识。</p>
 <p>设备是由ESP32开发的，预留了烧写接口如下图，排针是不焊接的，可以使用间距2.54mm的顶针烧写，或者焊接普通2.54mm间距的排针。内部预留了空间保证焊接后也可以装上外壳，</p>
-<div style="text-align: center;"><img src="1622310986%281%29.png"     style="width:40%"    ></div>
+<p><img src="1622310986(1).png" alt=""></p>
 <h2 id="烧写接口引脚定义">烧写接口引脚定义</h2>
 <table>
 <thead>
@@ -410,16 +414,16 @@
 <h2 id="引脚定义">引脚定义</h2>
 <p>设备内有两个LED，红色是电源LED无法控制，黄色连接了IO21，可以控制。继电器连接是的IO12引脚</p>
 
+                            </div>
+                            
                         </div>
-                        
+
                     </div>
 
-                </div>
 
+                    <div id="comments">
 
-                <div id="comments">
-                    
-                    
+                        
 
 
 <section class="comments">
@@ -433,13 +437,13 @@
 </section>
 
                         
-                    </div> 
+                    </div>
 
                 </div>
 
                 
 
-                
+
             </div>
         </div>
     </div>

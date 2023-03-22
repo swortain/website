@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>自造 on 剑山的个人网站</title>
+    <link>https://swortain.wang/tags/%E8%87%AA%E9%80%A0/</link>
+    <description>Recent content in 自造 on 剑山的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 17 Mar 2023 14:38:28 +0800</lastBuildDate><atom:link href="https://swortain.wang/tags/%E8%87%AA%E9%80%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CyberMatrix|赛博阵列</title>
+      <link>https://swortain.wang/project/cybermatrix/</link>
+      <pubDate>Fri, 17 Mar 2023 14:38:28 +0800</pubDate>
+      
+      <guid>https://swortain.wang/project/cybermatrix/</guid>
+      <description>CyberMatrix|赛博阵列是一个赛博朋克风格的桌面摆件，硬件采用嘉立创EDA设计，软件在platformIO上编写。代码开源在github上。 功能 用ESP32为控制器。驱动5个7x11的方形点阵，背部有5个WS2812作为背光。板载加速度计和温度传感器。 时间显示 5个点阵可以显示当前的小时和分钟。并且由于ESP32自带WiFi，所以可以连接到NTP服务器进行授时，省去了DS3231之类的实时时</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,7 +5,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>剑山的个人网站 - project</title>
+    <title>剑山的个人网站 - CyberMatrix|赛博阵列</title>
+
 
     
 
@@ -26,14 +27,14 @@
 
 <link rel="stylesheet" type="text/css" href="https://swortain.wang/css/responsive.css">
 
-
     <link rel="stylesheet" type="text/css" href="https://swortain.wang/css/nivo-lightbox.css">
-
 
 </head>
 
 <body>
+
     <header id="header-wrap">
+
         
 
 <nav class="navbar navbar-expand-lg fixed-top  scrolling-navbar">
@@ -153,17 +154,23 @@
 
 </nav>
 
+
     </header>
 
-    <div class="page-header" style="background: url(https://swortain.wang/img/banner1.jpg); background-size:cover;background-position:center">
+    
+    
+    
+
+    
+        <div class="page-header"style="background: url(/project/cybermatrix/head.jpg); background-size: cover;background-position: center">
+    
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="breadcrumb-wrapper">
-                        <h2 class="product-title">project</h2>
+                        <h2 class="product-title">CyberMatrix|赛博阵列</h2>
                         <ol class="breadcrumb">
-                            <li>Home </li>
-                            <li class="current">/project/</li>
+                            <li class="current"> Home/project/cybermatrix/ </li>
                         </ol>
                     </div>
                 </div>
@@ -176,114 +183,84 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-xs-12">
-                    <div class="blog-post">
-                        
-                        
+
+                    <div class="blog-post single-post">
+
+
+
                         <div class="post-thumb">
-                            
-                            
-                            <a href="https://swortain.wang/project/cybermatrix/"><img style="width: 100%; max-height:510px;object-fit:cover;" class="img-fluid" src="/project/cybermatrix/head.jpg" alt=""><i></i></a>
-                            
-                                                        
-                            <div class="hover-wrap"></div>
+
+
+                            <div class="hover-wrap">
+                            </div>
                         </div>
+
+
                         <div class="post-content">
-                            
-                            <ul class="list-inline cat-meta">
-                                
-                                <li class="tr-cats" style="display: inline;"><a href="https://swortain.wang/tags/%E5%BC%80%E6%BA%90/"> 开源 </a></li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;
-                                
-                                <li class="tr-cats" style="display: inline;"><a href="https://swortain.wang/tags/%E8%87%AA%E9%80%A0/"> 自造 </a></li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;
-                                
-                                <li class="tr-cats" style="display: inline;"><a href="https://swortain.wang/tags/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF/"> 电子电路 </a></li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;
-                                
-                                <li class="tr-cats" style="display: inline;"><a href="https://swortain.wang/tags/arduino/"> Arduino </a></li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;
-                                
-                            </ul>
-                            
-                            <h2 class="post-title"><a href="/project/cybermatrix/">CyberMatrix|赛博阵列</a></h2>
+                            <h2 class="post-title">CyberMatrix|赛博阵列</h2>
                             <div class="meta">
-                                <span class="meta-part"><a href="#"><i class="lni-user"></i> 剑山
-                                    </a></span>
-                                <span class="meta-part"><a href="#"><i class="lni-alarm-clock"></i>
-                                        March 17,
-                                        2023</a></span>
-                                <span class="meta-part"><a href="#"><i class="lni-folder"></i> project</a></span>
+                                <span class="meta-part"><i class="lni-user"></i> 剑山 </span>
+                                <span class="meta-part"></i>  March 17,
+                                    2023 </span>
+
                                 
                             </div>
                             <div class="entry-summary">
-                                <p>CyberMatrix|赛博阵列是一个赛博朋克风格的桌面摆件，硬件采用嘉立创EDA设计，软件在platformIO上编写。代码开源在github上。 功能 用ESP32为控制器。驱动5个7x11的方形点阵，背部有5个WS2812作为背光。板载加速度计和温度传感器。 时间显示 5个点阵可以显示当前的小时和分钟。并且由于ESP32自带WiFi，所以可以连接到NTP服务器进行授时，省去了DS3231之类的实时时...</p>
+                                <p>CyberMatrix|赛博阵列是一个赛博朋克风格的桌面摆件，硬件采用嘉立创EDA设计，软件在platformIO上编写。代码开源在github上。</p>
+<h1 id="功能">功能</h1>
+<p>用ESP32为控制器。驱动5个7x11的方形点阵，背部有5个WS2812作为背光。板载加速度计和温度传感器。</p>
+<h2 id="时间显示">时间显示</h2>
+<p>5个点阵可以显示当前的小时和分钟。并且由于ESP32自带WiFi，所以可以连接到NTP服务器进行授时，省去了DS3231之类的实时时钟芯片。
+不过这里有个字体的问题，因为为了能容易的实现print之类的方法，使用了Adafruit_GFX的库。这样可以把点阵当做一个屏幕来控制，但是因为像素非常的少，所以一定要精确控制字体中每个像素的亮灭。这样就需要自定义一个专用的字体。</p>
+<h2 id="点阵过渡效果">点阵过渡效果</h2>
+<p>为了让点阵有过渡的效果，我写了一个库。实现了在两个画面切换时，随机找到需要改变的一个像素进行切换。并且在不同的像素间加入很小的延迟，实现效果类似以前那种反应比较慢的电子产品的效果。</p>
+<h2 id="背景灯光">背景灯光</h2>
+<p>背面有5个WS2812留在了PCB开孔和开槽的附近，当有反光的外壳背板时（暂时还没做）可以从背面透出灯光，实现一些待机和敲击唤醒的灯效。
+这里为了呼吸灯效更自然一些，我用了电机控制里面常用的一个Sigmoid曲线。可以在启动和停止时更平滑一些。</p>
+<h2 id="温度和加速度传感器">温度和加速度传感器</h2>
+<p>因为觉得只有时间的显示有点单调，为了增加一些交互，我在板子上做了一个温度传感器和加速度计，用加速度计可以识别到附近是否有桌面的敲击，并且双击时切换屏幕显示内容为当前温度。</p>
+<blockquote>
+<p>这里有个尴尬的地方是画PCB的时候我尽量的原理了ESP32和可能发热的器件，但是没想到和正面的TM1640距离过近了，导致现在测量的温度比环境温度高了一些。。。下次改版的时候再说吧</p>
+</blockquote>
+<p>识别敲击的实现是在上电的时候连续采样求平均得到一个基准的XYZ，然后读取实时的XYZ，看和基准值的差别。差别大于阈值时认为有敲击，这里有个去抖的问题，用类似按键的去抖逻辑写了一个状态机来识别双击和去抖。效果大概就没问题了。</p>
+<h1 id="开源代码">开源代码</h1>
+<p>代码可以在<a href="https://github.com/swortain/CyberMatrix">这里</a>找到，如果喜欢的话可以STAR一下。</p>
+<h1 id="原理图">原理图</h1>
+<p><img src="SCH_257032A_CyberMatrix_1-P1_2023-03-22.png" alt=""></p>
+<h1 id="实拍图">实拍图</h1>
+<p><img src="aadc01e6fa3e958e5aa56ce6ce1bcff.jpg" alt=""></p>
+<p><img src="226e256a8461577af441675a64e7536.jpg" alt=""></p>
+
                             </div>
                             
-                            <a href="/project/cybermatrix/" class="btn btn-common btn-rm">Read More</a>
-                            
                         </div>
+
+                    </div>
+
+
+                    <div id="comments">
+
                         
-                        <div class="post-thumb">
-                            
-                            
-                            <a href="https://swortain.wang/project/insar-socket/"><img style="width: 100%; max-height:510px;object-fit:cover;" class="img-fluid" src="/project/insar-socket/head.jpg" alt=""><i></i></a>
-                            
-                                                        
-                            <div class="hover-wrap"></div>
-                        </div>
-                        <div class="post-content">
-                            
-                            <ul class="list-inline cat-meta">
-                                
-                                <li class="tr-cats" style="display: inline;"><a href="https://swortain.wang/tags/touchdesigner/"> TouchDesigner </a></li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;
-                                
-                                <li class="tr-cats" style="display: inline;"><a href="https://swortain.wang/tags/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF/"> 电子电路 </a></li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;
-                                
-                                <li class="tr-cats" style="display: inline;"><a href="https://swortain.wang/tags/%E5%95%86%E4%B8%9A%E9%A1%B9%E7%9B%AE/"> 商业项目 </a></li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;
-                                
-                            </ul>
-                            
-                            <h2 class="post-title"><a href="/project/insar-socket/">insar-socket | 装置插座</a></h2>
-                            <div class="meta">
-                                <span class="meta-part"><a href="#"><i class="lni-user"></i> 剑山
-                                    </a></span>
-                                <span class="meta-part"><a href="#"><i class="lni-alarm-clock"></i>
-                                        May 26,
-                                        2021</a></span>
-                                <span class="meta-part"><a href="#"><i class="lni-folder"></i> project</a></span>
-                                
-                            </div>
-                            <div class="entry-summary">
-                                <p>insar-socket是我的第一个产品类的作品，主要的功能是支持Modbus-TCP的插座，可以让你在装置项目中集成一个220的电器，而不需要你懂任何的电子电路知识。 我还写了一写装置软件的库（目前位置仅支持了TouchDesigner）。这样你甚至不需要了解Modbus的相关知识，只需要配网，和软件内部的一些设置即可。 参数 功率：额定功率2000w，长期负载建议不找过1500w。 电压：由于接口采用...</p>
-                            </div>
-                            
-                            <a href="/project/insar-socket/" class="btn btn-common btn-rm">Read More</a>
-                            
-                        </div>
+
+
+<section class="comments">
+<script src="https://utteranc.es/client.js"
+        repo="swortain/website"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+</section>
+
                         
                     </div>
 
-                    
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-
-                    
-                    
-
-
                 </div>
+
+                
+
+
             </div>
         </div>
     </div>
@@ -328,16 +305,11 @@
 
 </footer>
 
+
     <a href="#" class="back-to-top">
         <i class="lni-chevron-up"></i>
     </a>
 
-    <div id="preloader">
-        <div class="loader" id="loader-1"></div>
-    </div>
-
-
-    
     
 
 <script src="https://swortain.wang/js/jquery-min.js"></script>
@@ -353,11 +325,15 @@
 <script src="https://swortain.wang/js/jquery.slicknav.js"></script>
 <script src="https://swortain.wang/js/main.js"></script>
 
-
     <script src="https://swortain.wang/js/nivo-lightbox.js"></script>
     <script src="https://swortain.wang/js/form-validator.min.js"></script>
     <script src="https://swortain.wang/js/contact-form-script.min.js"></script>
     <script src="https://swortain.wang/js/summernote.js"></script>
+
+    <div id="preloader">
+        <div class="loader" id="loader-1"></div>
+    </div>
+
 </body>
 
 </html>
