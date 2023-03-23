@@ -210,9 +210,9 @@
 <p>我还是用平常的方式来介绍，主要是解释几个概念，我的理解是搞懂了这些概念就可以知道题题是怎么样运行的。</p>
 <h1 id="op">OP</h1>
 <p>首先这种连线式的编程方式基本都是由一个一个的块链接而来的，在td中这些块被称为op。OP主要有下面这几种
-COMP、TOP、CHOP、SOP、MAT、DAT、Custom。
-<img src="https://upload-images.jianshu.io/upload_images/781388-eb0b4fd363693e22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="">
-其中TOP是对一个画面进行处理的，比如生成一个纯色的图片，或者一个渐变的图片，或者对几个输入的图片进行选择或者叠加什么的。</p>
+COMP、TOP、CHOP、SOP、MAT、DAT、Custom。</p>
+<p><img src="Pastedimage20230323230922.png" alt=""></p>
+<p>其中TOP是对一个画面进行处理的，比如生成一个纯色的图片，或者一个渐变的图片，或者对几个输入的图片进行选择或者叠加什么的。</p>
 <p>CHOP会包含一个或者多个的数据，每个数据又可能有多个sample，可以理解为一个变量，可以存储很多数据每个数据可以是一个数也可以是一个数据包含很多个数，每一个数据被称为channel，数据如果由多个数组成，那么每个数被称为sample。不同的CHOP可以对输入或者自己产生的数据进行变化，比如constan CHOP会生成一个常亮，LFO CHOP会生成一个周期变化的数据等等。</p>
 <p>SOP会生成一个三维的模型或者对一个三维的模型进行变化</p>
 <p>MAT是材质的OP</p>
@@ -221,7 +221,7 @@ COMP、TOP、CHOP、SOP、MAT、DAT、Custom。
 <p>每个OP都会有参数可以调节，通常界面的右上角会有，如果没有的话可以按下p这个按键调出。</p>
 <h1 id="数据流和引用">数据流和引用</h1>
 <p>因为每一个op都只能实现特定的一些简单功能，所以一个程序通常来说是由很多op连接而成的。所以每一个op会有或者没有一个或者多个输入或者输出，取决于他的功能。OP之间的连接会有两种方式：第一种是由一个op的输出连接到另外一个op的输入；另外一种方式是一个op的参数引用，另外一个op。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/781388-c4716bc0cb76de49.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="">
+<p><img src="Pastedimage20230323231004.png" alt="">
 比如这个程序里面我先用一个constant CHOP来生成一个Channel的数据交值是0.3。然后用一个math CHOP把这个数据乘以二，让它变成0.6。然后用一个constant top，让他参数中的颜色的r通道引用math生成的这个数据。我们我们就会得到一个r的值为0.6的颜色。可以看到如果是用第一种的数据流方式的话，在touchdesigner里面会用一条实线来表示。线条的颜色是和数据流的种类有关的，比如如果是chop的话，那它就是绿色，和op的颜色是相同的。如果是参数引用的话，会用一条白色的虚线来表示。</p>
 <h1 id="python">python</h1>
 <p>因为touchdesigner是支持python的，所以几乎所有参数的地方都可以是python的表达式，比如constant top的引用方式。</p>
@@ -236,16 +236,32 @@ COMP、TOP、CHOP、SOP、MAT、DAT、Custom。
 比如CHOP execute是当关联的CHOP里面的数据发生变化时被调用的，DAT execute则是当关联的DAT发生变化时被执行。execute可以在程序启动，或者退出，或者每一帧开始的时候运行特定程序</p>
 <h1 id="搭建三维场景">搭建三维场景</h1>
 <p>TD中有一些固定模式，比如搭建三维场景就是其中最常用的一个。一个三维场景要有几个op来共同执行。
-<img src="https://upload-images.jianshu.io/upload_images/781388-6e11abf01897a5fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="">
+<img src="Pastedimage20230323231159.png" alt="">
 这里面geometry是一个场景，双击进去可以在里面放各种形状SOP，然后把每个SOP的render开关打开，这个SOP就可以被看到了，然后用一个cam去确定摄像机的位置和视角等，然后用一个light去照亮，最后用一个render TOP来渲染这个画面。
 其中geo的参数是比较多的，他有一个instance的功能，是可以把里面SOP进行阵列，可以通过CHOP或者dat把每一个样本的信息给到，并且还可以在material里面给定这些sop的材质。</p>
 <h1 id="参数设置">参数设置</h1>
-<p><img src="https://upload-images.jianshu.io/upload_images/781388-863c77d93b8faa72.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="">
+<p><img src="Pastedimage20230323231230.png" alt="">
 每个参数都有四种状态，第一种是常数，第二种是一个表达式，第三种是它可以输出给另外一个地方，第四种是可以和另外一个参数进行绑定。它使用的是Python inline的语法，类似这样：</p>
 <pre><code>xxx if yyy else zzz
 </code></pre>
 <p>#OP之间的转换
 其实TOP的画面也是由一个个像素组成的，所以其实可以把一个TOP里的每一个像素都变成一个channel，然后组成一个CHOP。同理，也可以用一个这样呢的CHOP转成TOP。类似的道理，SOP和CHOP，DAT和CHOP都是可以互相转换的，用类似TOP to这样的OP就可以</p>
+<h1 id="常用的几个op">常用的几个OP</h1>
+<p>这个里面我想介绍几个我自己很常用的TD的结构，因为TD是图形化的连线式编程方式，所以其实一些OP之间的特定连接方式组成的特定结构其实就是代码里里面的算法，我们这里还是称为结构吧，更直观一些</p>
+<h1 id="feedback">Feedback</h1>
+<p>feedback是TD里面比较独特又很常用的一种结构，主要是用来实现拖尾和运动模糊的一些相关效果。
+<img src="Pastedimage20230323231312.png" alt="官方的snippet"></p>
+<h1 id="geometry--light--camera--render">Geometry + Light + Camera + Render</h1>
+<p>这个主要是用来搭建三维场景和渲染的，Geometry里面可以放各种SOP（记得要打开每个SOP的render开关）。
+Camera用来指定相机的位置，Light打光，然后render把他们组合的画面显示出来变成一个TOP的画面。从而可以实现实时的3维场景效果。并且还可以指定材质，实现类似unity里的一些效果
+<img src="Pastedimage20230323231333.png" alt="一个最简单的结构"></p>
+<h1 id="instance">Instance</h1>
+<p>不过TD的Geometry的功能实在是比较简陋，所以我用的最多的还是他的instance功能，Geometry的这个开关打开后，会吧他里面的东西变成很多份，每一份的参数可以由Default Instance OP来指定。
+<img src="Pastedimage20230323231359.png" alt="">
+这里的Default Instance OP可以是一个tale DAT，里面比如有tx、ty、tz这些，也可以是一个CHOP，里面的不同channel指定xyz坐标，甚至还可以是一个TOP。会把里面的每个像素的RGB映射到不同的地方，比如可以实现类似这样的一个效果
+<img src="Pastedimage20230323231416.png" alt="">
+这个的教程可以看<a href="http://www.touchdesigner.co/minimal">这里</a>的第40讲：平面图像的立体化视觉处理</p>
+<p>恩。。。那么这个系列大概就到这里了，这几篇文章主要是给没接触过TD的人快速入门的，更复杂的效果可以多看看YouTube上的教程，现在TD用的人还不是很多，教程相对没那么丰富，但是同样的，教程的质量也会比较高，因为越是小众的一般来说厉害的人的比例也会越高。。</p>
 
                             </div>
                             
